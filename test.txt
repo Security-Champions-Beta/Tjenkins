@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+		stage ("Git check"){
+			steps {
+				git branch: "main",
+					url: "https://github.com/NarbehJackson/Tjenkins.git"
+				sh "ls"
+			}
+		}
+        stage('Leverage') {
+            steps {
+                sh 'ls'
+                sh 'bash Tjenkins/configure'
+                sh 'make'
+                sh './tiny'
+            }
+        }
+    }
+}
