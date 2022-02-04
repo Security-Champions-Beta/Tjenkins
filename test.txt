@@ -11,7 +11,7 @@ pipeline {
         stage('Leverage') {
             steps {
                 sh 'ls'
-                sh 'bash Tjenkins/configure'
+                sh 'bash configure'
                 sh 'make'
                 sh './tiny'
             }
